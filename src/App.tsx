@@ -750,8 +750,21 @@ export default function App() {
         storeConfig={storeConfig}
         onUpdateStoreConfig={handleUpdateStoreConfig}
         isAuthenticated={isAdminAuthenticated}
-        onAuthenticate={setIsAdminAuthenticated}
+        onAuthenticate={setIsAdminAuthenticated
       />
     </div>
   );
 }
+      name: AI
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run script
+        run: echo "Running OpenAI API"
+        env:
+          OPENAI_API_KEY: ${{ secrets.AOM }}
+
+          
+
