@@ -755,16 +755,6 @@ export default function App() {
     </div>
   );
 }
-      name: AI
-on: [push]
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Run script
-        run: echo "Running OpenAI API"
-        env:
-          OPENAI_API_KEY: ${{ secrets.AOM }}
 
           
 
