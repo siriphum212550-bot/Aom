@@ -1,0 +1,6 @@
+{
+  "name": "Next Gen KKU",
+  "description": "A comprehensive super app for Khon Kaen University students, including schedules, grade viewer, smart bus tracker, tuition payments, library booking, and university news.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
